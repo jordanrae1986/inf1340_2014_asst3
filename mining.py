@@ -14,6 +14,14 @@ __status__ = "Prototype"
 import json
 import datetime
 
+class StockMiner:
+    def __init__(self, stock_name, stock_file_name):
+        self.stock_name = stock_name
+        self.monthly_averages = []
+        self.stock_data = self.read_json_from_file(stock_file_name)
+        self.init_monthly_averages_list()
+
+
 stock_data = []
 monthly_averages = []
 
