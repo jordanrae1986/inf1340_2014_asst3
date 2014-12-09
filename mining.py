@@ -21,9 +21,10 @@ class StockMiner:
         self.stock_data = self.read_json_from_file(stock_file_name)
         self.init_monthly_averages_list()
 
+    def monthly_averages_list(self):
+        for daily_stock_results in self.stock_data:
+            
 
-stock_data = []
-monthly_averages = []
 
 
 def read_stock_data(stock_name, stock_file_name):
